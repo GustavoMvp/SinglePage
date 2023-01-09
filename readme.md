@@ -1,6 +1,6 @@
 # SinglePage Sobre
 
-## Um projeto solicitado pela T.ex Technology Experts com foco em aprendizado e responsividade.
+### Um projeto solicitado pela T.ex Technology Experts com foco em aprendizado e responsividade.
 
 <br>
 
