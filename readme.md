@@ -20,4 +20,4 @@
 
 ## Wireframe do Projeto
 
-<img src="../root/images/wireframe.png" >
+<img src="../Projeto Sobre/images/wireframe.png" width="50%">
