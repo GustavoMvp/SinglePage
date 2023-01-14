@@ -243,7 +243,7 @@ li {
 }
 @media (max-width: 1470px) and (max-width: 960px) {
   .container__info {
-    height: 35vh;
+    height: 800px;
   }
   .container__sobre-main {
     display: flex;
@@ -267,7 +267,7 @@ li {
   align-items: center;
   justify-content: center;
   gap: 200px;
-  height: 60vh;
+  height: 600px;
 }
 .container-box__people {
   background-color: #eff5f0;
