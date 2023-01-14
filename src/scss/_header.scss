@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30vw;
+    height: 35vw;
     margin: 0;
     position: relative;
 
@@ -76,6 +76,20 @@
     }
 }
 
+@media (max-width: 500px) {
+    header {
+        width: 500px;
+        height: 100px;
+    }
+    .menu {
+        height: 1px;
+
+        & > .logo {
+            display: none;
+        }
+    }
+    
+}
 /*Header End*/
 
 

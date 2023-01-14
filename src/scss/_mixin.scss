@@ -17,20 +17,3 @@
     color: #6B6666;
     text-align: justify;
 }
-
-
-@mixin responsive($device) {
-  @if $device == desktop {
-    @media (max-width: 1120px) {
-      @content;
-    }
-  } @else if $device == tablet {
-    @media (max-width: 960px) {
-      @content;
-    }
-  } @else if $device == mobile {
-    @media (max-width: 750px) {
-      @content;
-    }
-  }
-}

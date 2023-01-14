@@ -38,7 +38,6 @@
     }
 
     &__image {
-        // border: 1px solid;
         display: flex;
         justify-content: center;
         max-width: 100%;
@@ -84,6 +83,11 @@
     }
     .container-wrapper__image {
         width: 80%;
+    }
+}
+@media (max-width: 500px) {
+    .container__info {
+        width: 500px
     }
 }
 /*Acomodações end*/

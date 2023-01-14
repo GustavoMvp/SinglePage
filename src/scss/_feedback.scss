@@ -78,16 +78,16 @@
         }
     }
 
-    @media (max-width: 1470px) {
-        .container-box{
-            height: 500px;
-            gap: 100px;
-        }
-    }
-
-    @media (max-width: 960px) {
+@media (max-width: 1470px) {
     .container-box {
-        height: 35vh;
+        height: 500px;
+        gap: 100px;
+    }
+}
+
+@media (max-width: 960px) {
+    .container-box {
+        height: 45vh;
         gap: 100px;
     }
 }
@@ -110,4 +110,9 @@
     }
 }
     
+@media (max-width: 500px) {
+    .container-box {
+        width: 500px;
+    }
+}
 /*Feedback end*/

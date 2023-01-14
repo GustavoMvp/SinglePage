@@ -31,13 +31,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        // width: 50%;
         flex: 1;
         margin: 0 15px 0 30px;
     }
 
     &__image {
-        // border: 1px solid;
         display: flex;
         justify-content: center;
         max-width: 100%;
@@ -96,6 +94,12 @@
     }
     .paragraph {
         margin: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .container-wrapper {
+        width: 500px;
     }
 }
 
