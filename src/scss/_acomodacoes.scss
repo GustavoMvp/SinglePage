@@ -1,0 +1,90 @@
+@use 'variaveis' as v;
+@use 'mixin' as mx;
+
+/*Acomodaçoes start*/
+
+.container {
+
+    &__sobre-row{
+        margin: 2rem;
+        padding: 2rem 0 0 0;
+    }
+
+    
+    &__info-row {
+        margin: v.$marginPadrao
+    }
+
+    &__sobre {
+        padding: 5px 0 10px 10px;
+
+        & > h2 {
+            font-family: v.$font;
+            @include mx.icon-h2;
+        }
+    }
+
+    &__row {
+        background-color: v.$primary-color;
+        width: 350px;
+        height: 4px;
+        margin-left: 3px;
+    }
+
+    &__info {
+        margin-top: 6rem;
+        height: 660px;
+        background-color: v.$color-background;
+    }
+
+    &__image {
+        // border: 1px solid;
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    &__sobre-main {
+        display: flex;
+        justify-content: space-around;
+        gap: v.$gapPadrao;
+    }
+
+    &__paragraph {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        margin: 0 15px 0 30px;
+    }
+}
+
+@media (max-width: 1470px) {
+    .paragraph {
+        line-height: initial;
+    }
+    .container__image {
+        display: flex;
+        align-items: center;
+    }
+
+@media (max-width: 960px) {
+    .container__info {
+        height: 35vh;
+    }    
+
+
+    .container__sobre-main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 750px) {
+    }
+    .container-wrapper__image {
+        width: 80%;
+    }
+}
+/*Acomodações end*/

@@ -1,0 +1,72 @@
+@use 'variaveis' as v;
+@use 'mixin' as mx;
+
+
+/*Footer start*/
+.footer {
+    display: flex;
+    justify-content: center;
+    margin: v.$marginPadrao;
+
+    &__div {
+        background-color: #000;
+        height: 1px;
+        width: 90%;
+    }
+}
+.container {
+    
+    &__footer{
+    display: flex;
+    gap: 10vw;
+    align-items: center;
+    justify-content: center;
+
+    }
+
+    &__contato-p {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        margin: 20px 0 20px 0;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+
+
+        & > form {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            & > input {
+                border: 1px solid #000;
+                background-color: #fff;
+                border-radius: 15px;
+            }
+            
+            & > button {
+                background-color: v.$secondary-color;
+                color: #fff;
+                margin-top: 5px;
+                border-radius: 15px;
+                border: none;
+                width: 60px;
+                height: 30px;
+                
+            }
+        }
+    }
+    &__copy {
+        background-color: v.$color-background;
+        margin-top: v.$marginPadrao;
+        text-align: center;
+        height: 30px;
+    }
+    
+}
+
+/*Footer end*/
