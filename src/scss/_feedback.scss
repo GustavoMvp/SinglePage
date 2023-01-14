@@ -1,0 +1,113 @@
+@use 'variaveis' as v;
+@use 'mixin' as mx;
+
+
+/*Feedback start*/
+.container {
+    margin-top: v.$marginPadrao;
+    width: 100%;
+
+    &-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 200px;
+        height: 60vh;
+        
+        &__people {
+            background-color: v.$color-background;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 280px;
+            border-radius: 20px;
+            height: 370px;
+            box-shadow: 5px 5px 10px #6B6666;
+
+        }
+        &__paragraph {
+            width: 180px;
+            text-align: start;
+
+            & > p {
+                line-height: 20px;
+            }
+            }
+
+        &__dados{
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        &__image {
+            & > img {
+                border-radius: 50%;
+            }
+        }
+
+        &__info {
+            margin-left: 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+        }
+    }
+    
+
+    &__info-row {
+        margin: 2rem 0 2rem 1rem;
+    }
+    &__info-feedback {
+        padding: 5px 0 10px 10px;
+
+        & > h2 {
+            font-family: v.$font;
+            @include mx.icon-h2;
+        }
+    }
+
+    &__row-feedback {
+        background-color: v.$primary-color;
+        width: 480px;
+        height: 4px;
+        margin-left: 3px;
+        }
+    }
+
+    @media (max-width: 1470px) {
+        .container-box{
+            height: 500px;
+            gap: 100px;
+        }
+    }
+
+    @media (max-width: 960px) {
+    .container-box {
+        height: 35vh;
+        gap: 100px;
+    }
+}
+
+@media (max-width: 750px) {
+    .container-box {
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+        gap: 30px;
+    }
+
+    .container__footer-logo {
+        width: 200px;
+        margin-left: 20px ;
+    }
+
+    .container__form {
+        margin-right: 20px;
+    }
+}
+    
+/*Feedback end*/

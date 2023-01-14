@@ -1,0 +1,82 @@
+@use 'variaveis' as v;
+@use 'mixin' as mx;
+
+/*Header Start*/
+.container__header {
+    background: v.$bg-image no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vw;
+    margin: 0;
+    position: relative;
+
+    & > h1 {
+        font-family: v.$font;
+        font-size: 6rem;
+        text-align: center;
+        color: #fff;
+        text-shadow: v.$sombraPadrao;
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+    background-color: #eff5f0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 32px;
+    opacity: 0.8;
+
+    a {
+    color: #242222;
+    padding: 28px 0;
+    position: relative;
+    font-weight: 700;
+    }
+
+    a:hover {
+    color: v.$secondary-color;
+  }
+}
+
+.navbar {
+    font-size: 20px;
+    ul {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.container__logo{
+    position: relative;
+    top: 200px;
+    display: block;
+}
+
+@media (max-width: 1112px) {
+    .container__header{
+        & > h1 {
+            font-size: 4rem;
+        }
+    }
+}
+
+@media (max-width: 960px){
+    .container__header{
+        & > h1 {
+            font-size: 3rem;
+        }
+    }
+}
+
+/*Header End*/
+
+
+    
